@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="459" android:versionName="2.0700_459" package="com.digitalsky.girlsfrontline.cn.bili" platformBuildVersionCode="28" platformBuildVersionName="9">
+	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="26" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+	<uses-feature android:glEsVersion="0x20000" />
+	<uses-feature android:name="android.hardware.sensor.accelerometer" android:required="false" />
+	<uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+	<uses-feature android:name="android.hardware.touchscreen.multitouch" android:required="false" />
+	<uses-feature android:name="android.hardware.touchscreen.multitouch.distinct" android:required="false" />
+	<supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true" />
+	<supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true" />
+	<uses-permission android:name="com.asus.msa.SupplementaryDID.ACCESS" />
+	<uses-permission android:name="android.permission.GET_TASKS" />
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+	<uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+	<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+	<uses-permission android:name="android.permission.RECEIVE_SMS" />
+	<uses-permission android:name="android.permission.BLUETOOTH" />
+	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+	<application android:allowBackup="true" android:appComponentFactory="android.support.v4.app.CoreComponentFactory" android:hardwareAccelerated="true" android:icon="@mipmap/app_icon" android:installLocation="auto" android:isGame="true" android:label="@string/app_name" android:name="com.mob.MobApplication" android:networkSecurityConfig="@xml/network_security_config" android:supportsRtl="true" android:theme="@style/UnityThemeSelector">
+		<receiver android:name="net.agasper.unitynotification.UnityNotificationManager" />
+		<meta-data android:name="com.google.android.gms.version" android:value="12451000" />
+		<meta-data android:name="game_channelid" android:value="cn_bili" />
+		<meta-data android:name="platform_channel_id" android:value="Bili" />
+		<meta-data android:name="second_pay_type" android:value="_0" />
+		<activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.sunborn.girlsfrontline.SplashActivity" android:screenOrientation="landscape">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+				<category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+			</intent-filter>
+			<meta-data android:name="unityplayer.ForwardNativeEventsToDalvik" android:value="false" />
+			<meta-data android:name="unityplayer.UnityActivity" android:value="true" />
+		</activity>
+		<activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:launchMode="singleTask" android:name="com.sunborn.girlsfrontline.GameActivity" android:screenOrientation="landscape">
+			<meta-data android:name="unityplayer.UnityActivity" android:value="true" />
+		</activity>
+		<activity android:exported="true" android:launchMode="singleTop" android:name="com.digitalsky.girlsfrontline.cn.bili.wxapi.WXPayEntryActivity" />
+		<activity android:name="com.onevcat.uniwebview.UniWebViewFileChooserActivity" />
+		<meta-data android:name="android.max_aspect" android:value="2.4" />
+		<uses-library android:name="org.apache.http.legacy" android:required="false" />
+		<activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:launchMode="singleTop" android:name="com.bsgamesdk.android.activity.PrePayActivity" android:theme="@style/bsgamesdk_customDialog" />
+		<activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:launchMode="singleTop" android:name="com.bsgamesdk.android.activity.PaymentActivity" android:screenOrientation="portrait" android:theme="@style/bsgamesdk_customPaymentTranslucentTheme" />
+		<activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:launchMode="singleTop" android:name="com.bsgamesdk.android.activity.BSGameSdkAgreementActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+		<activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:launchMode="singleTop" android:name="com.bsgamesdk.android.activity.Login_RegActivity" android:theme="@style/bsgamesdk_customDialog" />
+		<activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:launchMode="singleTop" android:name="com.bsgamesdk.android.activity.LoadingActivity" android:theme="@style/bsgamesdk_customDialog" />
+		<activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:launchMode="singleTop" android:name="com.bsgamesdk.android.activity.TouristActivity" android:theme="@style/bsgamesdk_customDialog" />
+		<activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:launchMode="singleTop" android:name="com.bsgamesdk.android.activity.WelcomeActivity" android:theme="@style/bsgemsdk_activity_welcome_style" />
+		<activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:launchMode="singleTop" android:name="com.bsgamesdk.android.activity.NoticeActivity" android:theme="@style/bsgamesdk_customDialog" />
+		<activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:launchMode="singleTop" android:name="com.bsgamesdk.android.activity.PointActivity" android:theme="@style/bsgamesdk_customDialog" />
+		<activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:launchMode="singleTop" android:name="com.bsgamesdk.android.activity.ExitActivity" android:theme="@style/bsgamesdk_customDialog" />
+		<activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:launchMode="singleTop" android:name="com.bsgamesdk.android.activity.RegisterActivity" android:theme="@style/bsgamesdk_customDialog" />
+		<activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:launchMode="singleTop" android:name="com.bsgamesdk.android.activity.LicenseAgreementActivity" android:theme="@style/bsgamesdk_customDialog" />
+		<activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:launchMode="singleTop" android:name="com.bsgamesdk.android.activity.CaptchaWebActivity" android:theme="@style/bsgamesdk_customDialog" />
+		<activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:launchMode="singleTop" android:name="com.bsgamesdk.android.activity.WebActivity" android:theme="@style/bsgamesdk_customDialog" />
+		<activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:launchMode="singleTop" android:name="com.bsgamesdk.android.activity.BSGameAppleLoginActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+		<activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
+		<activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
+		<activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
+		<activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
+		<activity android:name="com.paypal.android.sdk.payments.PayPalFuturePaymentActivity" />
+		<activity android:name="com.paypal.android.sdk.payments.FuturePaymentConsentActivity" />
+		<activity android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity" />
+		<activity android:name="com.paypal.android.sdk.payments.PayPalProfileSharingActivity" />
+		<activity android:name="com.paypal.android.sdk.payments.ProfileSharingConsentActivity" />
+		<service android:exported="false" android:name="com.paypal.android.sdk.payments.PayPalService" />
+		<activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:launchMode="singleTask" android:name="com.bsgamesdk.android.dc.activity.BSGameAntiIndulegnceActivity" android:theme="@style/bsgamesdk_dc_customDialog" />
+		<service android:enabled="true" android:exported="false" android:name="com.bsgamesdk.android.dc.service.DcUpService" />
+		<activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:name="com.alipay.sdk.app.H5PayActivity" />
+		<activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:name="com.alipay.sdk.app.H5AuthActivity" />
+		<activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="true" android:launchMode="singleInstance" android:name="com.alipay.sdk.app.PayResultActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+			<intent-filter>
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:exported="true" android:launchMode="singleTask" android:name="com.alipay.sdk.app.AlipayResultActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+		<activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:name="com.alipay.sdk.app.H5OpenAuthActivity" android:screenOrientation="behind" android:windowSoftInputMode="adjustResize|stateHidden" />
+		<activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mob.tools.MobUIShell" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="adjustResize|stateHidden">
+			<intent-filter>
+				<action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+			<intent-filter android:priority="1000">
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:scheme="line.1477692153" />
+			</intent-filter>
+		</activity>
+		<activity android:launchMode="singleTask" android:name="cn.sharesdk.tencent.qq.ReceiveActivity" android:noHistory="true">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:scheme="tencent100371282" />
+			</intent-filter>
+		</activity>
+		<activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.sunborn.mysharesdk.wxapi.WXEntryActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+		<activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTop" android:name="com.sunborn.mysharesdk.yxapi.YXEntryActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+		<activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.sunborn.mysharesdk.apshare.ShareEntryActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+		<service android:enabled="true" android:name="com.smali.tools.TechnicalDemoOverlay" />
+		<meta-data android:name="Mob-AppKey" android:value="1853de70f4285" />
+		<meta-data android:name="Mob-AppSecret" android:value="94525a12811f99035de421583054add4" />
+		<meta-data android:name="BSGameSdk_PaidGame" android:value="false" />
+	</application>
+</manifest>

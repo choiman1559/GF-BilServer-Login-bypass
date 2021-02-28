@@ -1,0 +1,2 @@
+include ':app' , ':XDSdkLib'
+rootProject.name = "SmaliTools"
