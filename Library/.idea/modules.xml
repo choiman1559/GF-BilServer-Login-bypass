@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SmaliTools.iml" filepath="$PROJECT_DIR$/.idea/modules/SmaliTools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/XDSdkLib/SmaliTools.XDSdkLib.iml" filepath="$PROJECT_DIR$/.idea/modules/XDSdkLib/SmaliTools.XDSdkLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SmaliTools.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SmaliTools.app.iml" />
+    </modules>
+  </component>
+</project>
